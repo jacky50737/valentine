@@ -24,11 +24,11 @@ export default class App extends React.Component {
     fullStyle = [
         `/*
 * 珺珺小寶貝！
-* 這是我們的第一個七夕。我猜寶貝到現在還不知道我的工作！
+* 這是我們的第一個七夕。我猜寶貝到現在還不知道我的工作內容！
 * 我是個網頁工程師。就是網頁相關的東東。
-* 就像這個網頁。就是個什麼都沒有的頁面。
+* 比如說這個網頁。就是個什麼都沒有的頁面。
 * 我的工作就是在這種空白的頁面加點東西。
-* 嗯~~說起來手機和電腦要區分一下。
+* 嗯...說起來手機和電腦要區分一下。
 * 你現在用的是。 。 。${isPc ? '電腦' : '手機'}
 */
 
@@ -62,7 +62,7 @@ body, html {
 .token.function{ color: rgb(42,161,152) }
 .token.comment{ color: rgb(177,177,177) }
 
-/* 家個 3D 效果 */
+/* 加個 3D 效果 */
 html{
   perspective: 1000px;
   -webkit-perspective: 1000px;
