@@ -23,21 +23,21 @@ export default class App extends React.Component {
 
     fullStyle = [
         `/*
-* Hi。宝贝！
-* 这么久了。还没和宝贝说过我的工作呢！
-* 我是个前端工程师。俗称程序员。网页相关。
-* 如这个页面。就是个什么也没有的网页。
-* 我的工作就是给这种空白的页面加点儿东西。
-* 嗯。说起来手机和电脑还得区分一下。
-* 你现在用的是。。。${isPc ? '电脑' : '手机'}
+* 珺珺小寶貝！
+* 這是我們的第一個七夕。我猜寶貝到現在還不知道我的工作！
+* 我是個網頁工程師。就是網頁相關的東東。
+* 就像這個網頁。就是個什麼都沒有的頁面。
+* 我的工作就是在這種空白的頁面加點東西。
+* 嗯~~說起來手機和電腦要區分一下。
+* 你現在用的是。 。 。${isPc ? '電腦' : '手機'}
 */
 
-/* 首先给所有元素加上过渡效果 */
+/* 首先給所有元素加上動畫效果 */
 * {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-/* 白色背景太单调了。来点背景 */
+/* 白色背景太單調了。來點背景顏色 */
 body, html {
   color: #fff;
   background-color: darkslategray;
@@ -55,14 +55,14 @@ body, html {
   padding: 10px;
 }
 
-/* 这些代码颜色都一样。加点儿高亮区别来 */
+/* 這些程式顏色都一樣。加點亮度區別開來 */
 .token.selector{ color: rgb(133,153,0) }
 .token.property{ color: rgb(187,137,0) }
 .token.punctuation{ color: yellow }
 .token.function{ color: rgb(42,161,152) }
 .token.comment{ color: rgb(177,177,177) }
 
-/* 加个 3D 效果 */
+/* 家個 3D 效果 */
 html{
   perspective: 1000px;
   -webkit-perspective: 1000px;
@@ -77,11 +77,11 @@ html{
 }
 
 /*
-* 宝贝，今天教你写代码。
-* 用代码画一个爱心。
+* 寶貝，交天教你寫程式。
+* 用程式畫一個愛心。
 */
 
-/* 首先，来一个画板 */
+/* 首先，來一個畫板 */
 .heartWrapper {
   ${ isPc ? `width: 48vw;
   height: 96vh;` : `width: 96vw;
@@ -98,7 +98,7 @@ html{
   -webkit-transform-origin: 50% 0% 0;`}
 }
 
-/* 画一个方块，当左心室和右心室 */
+/* 畫一個方塊，當左心室和右心室 */
 .heart {
   width: 100px;
   height: 100px;
@@ -111,7 +111,7 @@ html{
   transform: rotate(45deg);
 }
 
-/* 画上左心房 */
+/* 畫上左心房 */
 .heart::before {
   content: '';
   background: #E88D8D;
@@ -123,7 +123,7 @@ html{
   top: 1px;
 }
 
-/* 再画上右心房 */
+/* 再畫上右心房 */
 .heart::after {
   content: '';
   background: #E88D8D;
@@ -135,7 +135,7 @@ html{
   top: -38px;
 }
 
-/* 太单调了，让心跳动起来 */
+/* 太普通了，讓心跳動起來 */
 @keyframes throb {
   0% {
     transform: scale(1) rotate(45deg);
@@ -153,8 +153,8 @@ html{
   animation: throb 1s infinite linear;
 }
 /*
-* Ok，完成！
-* 宝贝，七夕快乐！
+* Ok，完成拉！
+* 珺珺小寶貝，七夕快樂！
 */
 
 `
